@@ -1,0 +1,14 @@
+import java.util.Scanner;
+public class Areaofcircle {
+    public static void main(String[] args)
+    {
+        float r,area,pi;
+        Scanner obj= new Scanner(System.in);
+        System.out.println("enter radius: ");
+        r=obj.nextFloat();
+        System.out.println("enter pi value: ");
+        pi=obj.nextFloat();
+        area=pi*r*r;
+        System.out.println("area of the circle is "+area);
+    }
+}
