@@ -1,0 +1,11 @@
+import java.util.Scanner;
+public class Int {
+    public static void main(String[] args)
+    {
+        int num;
+        Scanner obj= new Scanner(System.in);
+        System.out.println("enter number: ");
+        num=obj.nextInt();
+        System.out.println("given integer is "+num);
+    }
+}
