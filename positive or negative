@@ -1,0 +1,22 @@
+import java.util.Scanner;
+public class Positivenegative {
+    public static void main(String[] args)
+    {
+       int num;
+       Scanner obj=new Scanner(System.in);
+       System.out.println("enter number: ");
+       num=obj.nextInt();
+       if(num>0)
+       {
+           System.out.println("positive number");
+       }
+       else if(num<0)
+       {
+           System.out.println("negative number");
+       }
+       else
+       {
+           System.out.println("zero");
+       }
+    }
+}
