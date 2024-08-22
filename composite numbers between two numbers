@@ -1,0 +1,23 @@
+public class CompositeNumbers {
+
+    public static boolean isComposite(int num) {
+        if (num <= 1) return false; 
+        for (int i = 2; i <= Math.sqrt(num); i++) {
+            if (num % i == 0) return true; 
+        }
+        return false;
+    }
+
+    public static void main(String[] args) {
+        int a = 12;
+        int b = 19;
+
+        System.out.print("Composite numbers between " + a + " and " + b + ": ");
+
+        for (int i = a; i <= b; i++) {
+            if (isComposite(i)) {
+                System.out.print(i + " ");
+            }
+        }
+    }
+}
