@@ -1,0 +1,18 @@
+import java.util.Scanner;
+public class SkipNumbers {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.print("Enter the starting value M: ");
+        int M = input.nextInt();
+        System.out.print("Enter the ending value N: ");
+        int N = input.nextInt();
+        System.out.print("Enter the value of K (numbers to skip): ");
+        int K = input.nextInt();
+        for (int i = M; i <= N; i += (K + 1)) {
+            System.out.print(i);
+            if (i + (K + 1) <= N) {
+                System.out.print(", ");
+            }
+        }
+    }
+}
