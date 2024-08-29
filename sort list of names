@@ -7,24 +7,21 @@ public class NameSorter {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
-        // Input from the user
         System.out.print("Enter the list of names separated by spaces: ");
         String[] names = input.nextLine().split(" ");
 
         System.out.print("Order (A/D): ");
         char order = input.next().charAt(0);
 
-        // Sort the names
         if (order == 'A' || order == 'a') {
-            Arrays.sort(names); // Ascending order
+            Arrays.sort(names); 
         } else if (order == 'D' || order == 'd') {
-            Arrays.sort(names, Collections.reverseOrder()); // Descending order
+            Arrays.sort(names, Collections.reverseOrder()); 
         } else {
             System.out.println("Invalid order choice.");
             return;
         }
 
-        // Output the sorted names
         System.out.println(String.join(" ", names));
     }
 }
