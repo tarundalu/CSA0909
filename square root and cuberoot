@@ -1,0 +1,10 @@
+public class Root {
+    public static void main(String[] args)
+    {
+        int n=16,m=27;
+        double s=Math.sqrt(n);
+        double c=Math.cbrt(m);
+        System.out.println(s);
+        System.out.println(c);
+    }
+}
