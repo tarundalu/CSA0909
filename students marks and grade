@@ -1,0 +1,40 @@
+import java.util.Scanner;
+public class Marks {
+    public static void main(String[] args)
+    {
+        Scanner obj=new Scanner(System.in);
+        int p,c,m,s,total;
+        System.out.println("enter python marks: ");
+        p=obj.nextInt();
+        System.out.println("enter c programming marks: ");
+        c=obj.nextInt();
+        System.out.println("enter mathematics marks: ");
+        m=obj.nextInt();
+        System.out.println("enter physics marks: ");
+        s=obj.nextInt();
+        total=p+c+m+s;
+        double aggregation=total/4;
+        System.out.println("total is "+total);
+        System.out.println("aggregation is "+aggregation);
+        if(aggregation>=75)
+        {
+            System.out.println("DISTINCTION");
+        }
+        else if(aggregation<=60 && aggregation<75)
+        {
+            System.out.println("FIRST DIVISION");
+        }
+        else if(aggregation<=50 && aggregation<60)
+        {
+            System.out.println("SECOND DIVISION");
+        }
+        else if(aggregation<=40 && aggregation<50)
+        {
+            System.out.println("THIRD DIVISION");
+        }
+        else
+        {
+            System.out.println("FAIL");
+        }
+    }
+}
