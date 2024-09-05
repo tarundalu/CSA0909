@@ -1,0 +1,27 @@
+import java.util.Scanner;
+public class Bonus {
+    public static void main(String[] args) {
+        Scanner obj = new Scanner(System.in);
+        double bonus=0,total=0;
+        System.out.println("enter salary: ");
+        int salary=obj.nextInt();
+        System.out.println("enter grade: ");
+        char g=obj.next().charAt(0);
+        if(g=='A'||g=='a')
+        {
+            bonus+=salary/5;
+            total+=salary+bonus;
+        }
+        else if(g=='B'||g=='b')
+        {
+            bonus+=salary/10;
+            total+=salary+bonus;
+        }
+        else if(salary<=10000)
+        {
+            bonus+=salary/2;
+            total+=salary+bonus;
+        }
+        System.out.println("bonus: "+bonus+"\ntotal: "+total);
+    }
+}
