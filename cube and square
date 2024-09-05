@@ -1,0 +1,14 @@
+import java.util.Scanner;
+public class Squarecube {
+    public static void main(String[] args)
+    {
+        Scanner obj=new Scanner(System.in);
+        int n,sq,c;
+        System.out.println("enter number: ");
+        n=obj.nextInt();
+        sq=n*n;
+        c=sq*n;
+        System.out.println("square of "+n+" is "+sq);
+        System.out.println("cube is "+c);
+    }
+}
