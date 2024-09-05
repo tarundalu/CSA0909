@@ -1,0 +1,36 @@
+import java.util.Scanner;
+public class Matrixaddition {
+    public static void main(String[] args)
+    {
+        Scanner obj=new Scanner(System.in);
+        int i,j;
+        System.out.println("enter matrix1 elements: ");
+        int[][] a=new int[2][2];
+        for(i=0;i<2;i++)
+        {
+            for(j=0;j<2;j++)
+            {
+                a[i][j]=obj.nextInt();
+            }
+        }
+        System.out.println("enter matrix2 elements: ");
+        int[][] b=new int[2][2];
+        for(i=0;i<2;i++)
+        {
+            for(j=0;j<2;j++)
+            {
+                b[i][j]=obj.nextInt();
+            }
+        }
+        int[][] c=new int[2][2];
+        System.out.println("resultant matrix is ");
+        for(i=0;i<2;i++)
+        {
+            for(j=0;j<2;j++)
+            {
+                c[i][j]=a[i][j]+b[i][j];
+                System.out.print(c[i][j]+"\t");
+            }
+        }
+    }
+}
