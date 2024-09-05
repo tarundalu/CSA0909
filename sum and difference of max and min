@@ -1,0 +1,25 @@
+import java.util.Scanner;
+import java.util.Arrays;
+public class Array {
+    public static void main(String[] args)
+    {
+        Scanner obj=new Scanner(System.in);
+        System.out.println("enter size: ");
+        int s=obj.nextInt();
+         System.out.println("enter m: ");
+        int m=obj.nextInt();
+         System.out.println("enter n: ");
+        int n=obj.nextInt();
+        System.out.println("enter elements: ");
+        int[] a=new int[s];
+        for(int i=0;i<s;i++)
+        {
+            a[i]=obj.nextInt();
+        }
+        Arrays.sort(a);
+        System.out.println("m is "+a[s-m]+"\nn is "+a[n-1]);
+        int sum=a[s-m]+a[n-1];
+        int difference=a[s-m]-a[n-1];
+        System.out.println("sum is "+sum+"\ndifference is "+difference);
+}
+}
