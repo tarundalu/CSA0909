@@ -1,0 +1,17 @@
+import java.util.Scanner;
+public class Atm {
+    public static void main(String[] args)
+    {
+        Scanner obj=new Scanner(System.in);
+        System.out.println("enter 2000 notes:  ");
+        int a=obj.nextInt();
+        System.out.println("enter 500 notes: ");
+        int b=obj.nextInt();
+        System.out.println("enter 200 notes: ");
+        int c=obj.nextInt();
+        System.out.println("enter 100 notes: ");
+        int d=obj.nextInt();
+        int total=(2000*a)+(500*b)+(200*c)+(100*d);
+        System.out.println("total amount is "+total);
+    }
+}
