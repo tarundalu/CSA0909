@@ -1,0 +1,38 @@
+import java.util.Scanner;
+public class Ebill {
+    public static void main(String[] args)
+    {
+        int units,bill;
+        Scanner obj=new Scanner(System.in);
+        System.out.println("enter units: ");
+        units=obj.nextInt();
+        if(units>100)
+        {
+            if(units>=200)
+            {
+                if(units>300)
+                {
+                    bill=units*8;
+                }
+                else
+                {
+                    bill=units*6;
+                }
+            }
+            else
+            {
+                bill=units*5;
+            }
+        }
+        else
+        {
+            bill=0;
+        }
+        System.out.println("total bill: "+bill);
+    }
+}
+
+//output
+enter units: 
+280
+total bill: 1680
