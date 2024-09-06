@@ -1,0 +1,17 @@
+public class PascalTriangle {
+    public static void main(String[] args) {
+        int rows = 4; 
+
+        for (int i = 1; i <=rows; i++) {
+           
+            for (int j = rows - i - 1; j > 0; j--) {
+                System.out.print(" ");
+            }
+            for (int j = 0; j <= i-1; j++) {
+                System.out.print(" "+i+" ");
+            }
+            
+            System.out.println(); 
+        }
+    }
+}
