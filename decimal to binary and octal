@@ -1,0 +1,12 @@
+import java.util.Scanner;
+public class Decimalbinaryoctal {
+    public static void main(String[] args)
+    {
+        Scanner obj=new Scanner(System.in);
+        System.out.println("enter decimal number: ");
+        int decimal=obj.nextInt();
+        String binary=Integer.toBinaryString(decimal);
+        String octal=Integer.toOctalString(decimal);
+        System.out.println("binary is "+binary+"\noctal is "+octal);
+    }
+}
